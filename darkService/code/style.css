@@ -1,0 +1,845 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+}
+/* ===================================== HEADER START ==================================== */
+header {
+  width: 100%;
+  height: 590px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../img/Layer\ 961.jpg);
+  background-repeat: no-repeat;
+  background-size: center;
+}
+nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto;
+  color: white;
+  padding: 30px 0 0;
+}
+nav .logo {
+  width: 8%;
+  position: relative;
+  display: flex;
+  cursor: pointer;
+}
+nav .logo .logoText {
+  width: 60px;
+  height: 60px;
+  background: #11749e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30.46px;
+  font-weight: 500;
+  color: #f5f5f5;
+  font-family: Arial;
+  z-index: 10;
+  transition: all 0.5s;
+}
+nav .logo .logoText:hover {
+  color: white;
+  text-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 40px white;
+}
+nav .logo .behindBox {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #cacaca;
+  transition: all 0.5s;
+}
+nav .logo .behindBox:hover {
+  background: #11749e;
+}
+nav .navbar {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 70% 19%;
+  place-content: end;
+  gap: 5%;
+}
+
+nav .navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+nav .navbar .homeHeader li a {
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 400;
+  color: #ffffff;
+  font-family: "Arial";
+  text-shadow: 0 0 10px white;
+  transition: all 0.5s;
+}
+nav .navbar .homeHeader li a:hover {
+  text-shadow: 0 0 10px white, 0 0 20px aqua, 0 0 40px white;
+}
+nav .navbar .connection ul {
+  display: flex;
+  justify-content: space-between;
+}
+nav .navbar .connection ul li i {
+  cursor: pointer;
+  font-size: 16px;
+}
+nav .navbar .connection ul li i:hover {
+  text-shadow: 0 0 10px white, 0 0 20px aqua, 0 0 40px white;
+}
+header .headerText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 250px;
+}
+header .headerText h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 10em;
+  color: #f5f5f5;
+  font-weight: 400;
+  margin-left: -25px;
+}
+header .headerText p {
+  font-size: 25px;
+  color: #11749e;
+  font-weight: 400;
+  letter-spacing: 19px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+header .scroll-down {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 500px;
+  cursor: pointer;
+}
+header .scroll-down .scroll {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  border: 2px solid #fff;
+  border-left: none;
+  border-top: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotate(45deg) translate(-80%);
+  cursor: pointer;
+  transition: all 0.5;
+}
+/* ===================================== HEADER END ==================================== */
+/* ===================================== MAIN START ==================================== */
+main {
+  padding: 128px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #11749e;
+}
+main .agancy {
+  width: 627px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 147px;
+}
+main .agancy h3 {
+  font-size: 247px;
+  font-weight: 400;
+  line-height: 88px;
+  color: #5993b2;
+  font-family: "Roboto";
+}
+main .agancy span {
+  display: block;
+  font-size: 37px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  margin-top: -77px;
+}
+main .feature-box {
+  width: 80%;
+  display: flex;
+  margin: auto;
+}
+main .feature-box .section {
+  width: 23%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .feature-box .section .feature-icons {
+  width: 133px;
+  height: 133px;
+  background-color: #2e85aa;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .feature-box .section .feature-icons i {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+main .feature-box .section .feature-icons i:hover {
+  animation: icons 1s linear infinite;
+}
+@keyframes icons {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+main .feature-box .section h4 {
+  margin: 24px 0 24px 0;
+  font-size: 17px;
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: 500;
+  text-transform: uppercase;
+}
+main .feature-box .section p {
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: "Roboto";
+  line-height: 24px;
+}
+/* ===================================== MAIN END ==================================== */
+/* ===================================== IMAGE-BOXS START ================================== */
+.image-boxs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.image-boxs .box {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.image-boxs .box img {
+  width: 100%;
+  height: 100%;
+}
+.image-boxs .box .img-over-Text {
+  background-color: #222222;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 82px;
+}
+.image-boxs .box .img-over-Text .overText {
+  width: 70%;
+  margin: auto;
+}
+.image-boxs .box .img-over-Text.white {
+  background: #f4f4f4;
+  color: #222222;
+}
+.image-boxs .box .img-over-Text .overText span {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Roboto";
+  letter-spacing: 1px;
+}
+.image-boxs .box .img-over-Text .overText h4 {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Arial";
+  margin: 17px 0 44px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.image-boxs .box .img-over-Text .overText p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 25px;
+  font-family: Arial;
+  margin-bottom: 35px;
+}
+/* ===================================== IMAGE-BOXS END================================== */
+/* ===================================== SECTION START ================================== */
+section {
+  width: 80%;
+  margin: auto;
+  padding: 91px 0 114px 0;
+}
+section .B {
+  text-align: center;
+}
+section .B h3 {
+  color: #e2e2e2;
+  line-height: 150px;
+  font-size: 247px;
+  font-family: "Arial";
+  font-weight: 700;
+  text-transform: uppercase;
+}
+section .B span {
+  display: block;
+  color: #222222;
+  line-height: 50px;
+  font-size: 37.5px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: -107px;
+}
+section .B p {
+  font-size: 25px;
+  color: #222222;
+  font-weight: 500;
+  font-family: "Arial";
+  margin: 110px 0 66px 0;
+}
+section .fresh-summer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+section .fresh-summer .section {
+  width: 23.5%;
+  text-align: center;
+}
+section .fresh-summer .section img {
+  width: 100%;
+  height: 250px;
+}
+section .fresh-summer .section h3 {
+  font-size: 16px;
+  color: #11749e;
+  font-weight: 600;
+  font-family: Arial;
+  margin: 34px 0 17px 0;
+}
+section .fresh-summer .section p {
+  color: #222222;
+  font-size: 15px;
+  font-family: Arial;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+}
+/* ===================================== SECTION END================================== */
+/* ===================================== MAIN START================================== */
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.container .col {
+  width: 47%;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.container .col i {
+  font-size: 72px;
+  margin-right: 33px;
+}
+.container .col p {
+  font-size: 17px;
+  font-weight: 500;
+  font-family: Arial;
+  line-height: 25px;
+}
+/* ===================================== MAIN END================================== */
+/* ===================================== DESIGN START================================== */
+.design {
+  width: 100%;
+  background: url(../img/phone\ background.jpg);
+  background-size: cover;
+  padding: 220px 0 97px 0;
+}
+
+.design .container .col-6 {
+  color: #ffffff;
+}
+.design .container .col-6 h4 {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: Arial;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.design .container .col-6 p {
+  width: 31rem;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Arial;
+  line-height: 29px;
+  margin: 42px 0 72px 0;
+}
+.design .container .col-6 span {
+  display: block;
+  background-color: #11749e;
+  padding: 14px 0 14px 20px;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: Arial;
+}
+.design .container .col-6 span:nth-of-type(1) {
+  width: 26rem;
+}
+.design .container .col-6 span:nth-of-type(2) {
+  width: 28rem;
+}
+.design .container .col-6 span:nth-of-type(3) {
+  width: 29rem;
+  margin-bottom: 0;
+}
+.design .container .col-6 img {
+  width: 18rem;
+  height: 600px;
+  border-radius: 30px;
+  margin: -120px -20px 0 0;
+}
+/* ===================================== DESIGN END================================== */
+/* ===================================== SECTION START ================================== */
+.row {
+  display: flex;
+  width: 100%;
+}
+.row .col-3 {
+  width: 25%;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row .col-3:last-child {
+  padding: 0 0px 0 15px;
+}
+.row .col-3 img {
+  width: 100%;
+  height: 100%;
+}
+.row .col-3 .shortInfo-developer {
+  width: 215px;
+  height: 78px;
+  background-color: #272525;
+  text-align: center;
+  background-color: #ffffff;
+  margin-top: -48px;
+}
+.row .col-3 .shortInfo-developer h4 {
+  font-size: 20px;
+  margin-top: 24px;
+  color: #11749e;
+  font-weight: 500;
+  font-family: Arial;
+  text-transform: uppercase;
+}
+.row .col-3 .shortInfo-developer p {
+  font-size: 15px;
+  color: #000000;
+  font-weight: 600;
+  margin-top: 14px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/* ===================================== SECTION END ================================== */
+
+/* ===================================== CONTACT START ================================== */
+.contact {
+  width: 100%;
+  height: 852px;
+  background: url(../img/contact\ background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 150px 0 100px 0;
+}
+.contact h4 {
+  color: #ffffff48;
+  line-height: 150px;
+  font-size: 247px;
+  font-family: Tahoma, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 145px;
+}
+.contact h4 span {
+  display: block;
+  color: #ffffff;
+  line-height: 50px;
+  font-size: 37px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: -75px;
+}
+.contact form {
+  width: 80%;
+  margin: auto;
+}
+.contact form .input {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 4%;
+}
+.contact form .input input {
+  text-indent: 22px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid grey;
+  height: 48px;
+  color: #ffffff;
+}
+.contact form textarea {
+  margin-top: 40px;
+  width: 100%;
+  height: 150px;
+  outline: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 17px 21px 0 21px;
+  resize: none;
+}
+#submit {
+  border: none;
+  display: block;
+  width: 227px;
+  height: 63px;
+  margin: 44px auto 0;
+  background-color: #11749e;
+  font-size: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+/* ===================================== CONTACT END ================================== */
+footer {
+  width: 100%;
+  height: 115px;
+  background-color: #222222;
+}
+.footer-text {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  font-size: 13px;
+  font-family: "Roboto";
+  font-weight: 600;
+}
+
+/* ============================= RESPONSIVE TAYYORLASH ================================*/
+
+/* MD{768:991} */
+@media screen and (max-width: 991px) {
+  header .headerText h1 {
+    font-size: 5em;
+    letter-spacing: 20px;
+    text-align: right;
+  }
+  header .headerText p {
+    font-size: 1.1em;
+    text-align: center;
+  }
+  nav .navbar .homeHeader li a {
+    font-size: 14px;
+  }
+  nav .navbar .connection ul li i {
+    font-size: 14px;
+  }
+  main .feature-box {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 40px 0;
+  }
+  main .feature-box .section {
+    width: 65%;
+    text-align-last: center;
+  }
+  .image-boxs .box .img-over-Text {
+    padding: 30px 0 0 0;
+  }
+  section .fresh-summer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 40px 0;
+  }
+  section .fresh-summer .section {
+    width: 80%;
+    margin: auto;
+  }
+  .container .col {
+    display: grid;
+    grid-template-columns: repeat (1, auto);
+    gap: 30px 0;
+    place-items: center;
+  }
+  .design .container .col-6 p {
+    font-size: 14px;
+    width: 22rem;
+  }
+  .design .container .col-6 span {
+    font-size: 1rem;
+  }
+  .design .container .col-6 span:nth-of-type(1) {
+    width: 18.2rem;
+  }
+  .design .container .col-6 span:nth-of-type(2) {
+    width: 19.3rem;
+  }
+  .design .container .col-6 span:nth-of-type(3) {
+    width: 20.1rem;
+  }
+  .design .container .col-6 img {
+    height: 38rem;
+    margin-right: -40px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .row .col-3 {
+    width: 30%;
+  }
+  .contact h4 span {
+    font-size: 25px;
+    margin-top: -90px;
+  }
+}
+
+/* CM{576:767} */
+@media screen and (max-width: 767px) {
+  nav {
+    width: 100%;
+    height: 100%;
+    background-color: #51d613;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s;
+  }
+  nav .navbar {
+    width: 20%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  nav .logo {
+    margin-left: -40px;
+  }
+  nav .navbar .homeHeader {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  nav .navbar .homeHeader li a {
+    font-size: 18px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    text-shadow: 0 0 0 white;
+  }
+  nav .navbar .homeHeader li a:hover {
+    border-bottom: 2px solid rgb(241, 21, 21);
+    text-shadow: none;
+  }
+  header .burger {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px solid rgb(77, 76, 75);
+    box-shadow: 0 0 10px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    z-index: 3;
+    cursor: pointer;
+  }
+  header .burger .btn-burger {
+    width: 25px;
+    height: 4px;
+    background: #15b0df;
+    border-radius: 25px;
+    transition: all 0.5s ease-in-out;
+  }
+  header .burger .btn-burger::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 4px;
+    background: #15b0df;
+    border-radius: 25px;
+    transform: translateY(-10px);
+    transition: all 0.5s ease-in-out;
+  }
+  header .burger .btn-burger::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 4px;
+    background: #15b0df;
+    border-radius: 25px;
+    transform: translateY(10px);
+    transition: all 0.5s ease-in-out;
+  }
+  nav.show ~ .burger .btn-burger {
+    background: transparent;
+  }
+  nav.show ~ .burger .btn-burger::after {
+    transform: rotate(45deg);
+  }
+  nav.show ~ .burger .btn-burger::before {
+    transform: rotate(-45deg);
+  }
+  nav.hide {
+    left: -100%;
+    transform: translateX(-100%);
+  }
+  nav.show {
+    transform: translateX(0%);
+  }
+  header .headerText p {
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: "Roboto";
+    letter-spacing: 15px;
+  }
+  header .headerText h1{
+    font-size: 45px;
+  }
+  main .agancy h3{
+    margin-left: -60px;
+  }
+  main .agancy span {
+      margin-left: -60px;
+    font-size: 25px;
+  }
+  .image-boxs .box .img-over-Text {
+    padding: 10px 0 0 0;
+  }
+
+  .design .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+  }
+  .design .container .col-6 span {
+    margin-left: 25px;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 40px;
+  }
+  .row .col-3 {
+    width: 45%;
+    margin: auto;
+  }
+  .contact form .input{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+  /* XS{0:575} */
+  @media (max-width: 575px){
+    header .headerText h1{
+      font-size: 25px;
+    }
+    header .headerText p {
+      font-size: 12px;
+    }
+    main .agancy h3{
+      font-size: 160px;
+    }
+    main .agancy span{
+      font-size: 18px;
+    }
+    main .feature-box{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .image-boxs .box{
+      display: flex;
+      flex-direction: column;
+    }
+    .image-boxs .box:last-child{
+      flex-direction: column-reverse;
+    }
+    section .fresh-summer{
+      display: flex;
+      flex-direction: column;
+    }
+    main .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .container .col{
+      width: 100%;
+      text-align: center;
+    }
+    header .burger{
+      position: fixed;
+      top: 10%;
+      right:10%;
+    }
+    .row{
+      display: flex;
+      flex-direction: column;
+
+    }
+  }
